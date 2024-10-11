@@ -14,9 +14,21 @@ let myBtn = document.querySelector('#btn1');
 let myBtn2 = document.querySelector('#btn2');
 let myBtn3 = document.querySelector('#btn3');
 
-function changeColor () {
-    myBtn.style.backgroundColor = 'red';
-    myBtn.style.color = 'white';
+function changeColor (btnr, color) {
+    if(btnr == 1){
+        myBtn.style.backgroundColor =color ;
+        myBtn.style.color = 'white'; 
+    }
+    if(btnr == 2){
+        myBtn2.style.backgroundColor = color;
+        myBtn2.style.color = 'white'; 
+    }
+
+    if(btnr == 3){
+        myBtn3.style.backgroundColor = color;
+        myBtn3.style.color = 'white'; 
+    }
+
 }
 function changeColor2 () {
     myBtn2.style.backgroundColor = 'blue';
